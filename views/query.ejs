@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs") -%>
+<div id="form">
+
+  <form class="forms" action="/query" method="post">
+    <input type="email" name="email" placeholder="Email" class="to-change"><br>
+    <textarea name="name" rows="5" cols="30" id="message" placeholder="Your Message (cannot be Blank!)" class="to-change"></textarea><br>
+    <button type="submit" name="button" class="done-button">Done</button>
+  </form>
+</div>
+<%- include("partials/footer") -%>

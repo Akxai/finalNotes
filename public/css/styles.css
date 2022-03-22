@@ -1,0 +1,330 @@
+body {
+  background-color: #191919;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+}
+
+h3 {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+}
+
+li {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+  font-size: 150px;
+}
+
+h1.heading {
+  text-shadow: 2px 2px 4px #fff;
+}
+
+span {
+  color: #AA14F0;
+}
+
+ul {
+  padding-bottom: 30px;
+  text-align: left;
+  list-style-position: inside;
+  margin: 30px;
+  list-style-image: url("images/envelope.svg");
+}
+
+hr {
+  background-color: #191919;
+  border-style: dotted none none;
+  border-color: #fff;
+  border-width: 7px;
+  width: 70px;
+  margin: 100px auto;
+}
+
+input {
+  border-radius: 50px;
+  padding: 20px;
+  margin: 20px;
+}
+
+textarea {
+  border-radius: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+button {
+  border-radius: 50px;
+  font-weight: bold;
+  background-color: #E45826;
+  width: 250px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: line-through;
+}
+
+p {
+  color: #fff;
+  padding: 30px 0 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: #AA14F0;
+  padding: 50px 0 20px;
+}
+
+#ECE {
+  text-align: center;
+  font-weight: 900;
+  font-size: 150px;
+}
+
+#form {
+  text-align: center;
+  padding-left: 20px;
+}
+
+.list ::marker {
+  color: #AA14F0;
+}
+
+.other-list ::marker {
+  color: #1abc9c;
+}
+
+.button-mode {
+  background-color: #F473B9;
+}
+
+.change-to {
+  color: #fff;
+  background-color: #000;
+}
+
+.one-year {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.two-year {
+  padding-bottom: 40px;
+}
+
+.come-soon-text {
+  font-size: 70px;
+  padding-bottom: 50px;
+}
+
+.footer-icons {
+  padding: 20px;
+  color: black;
+}
+
+.footer-icons:hover {
+  color: #fff;
+}
+
+.patience-text {
+  text-align: center;
+}
+
+.virus-img:hover {
+  color: #DA1212;
+}
+
+.query {
+  color: #000;
+  text-align: center;
+}
+
+.query-mode {
+  color: #fff;
+}
+
+.query-section {
+  background-color: #AA14F0;
+  padding: 25px;
+  margin: auto;
+  width: 250px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.done-button {
+  padding: 20px;
+  margin: 20px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(237, 117, 47, 0.4);
+}
+
+.done-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(-250%) skewX(-30deg);
+  transition: transform 0.7s ease-in-out;
+}
+
+.done-button:hover::before {
+  transform: translateX(200%) skewX(-30deg);
+}
+
+@media (max-width: 990px) {
+  ul {
+    text-align: left;
+  }
+
+  li {
+    text-align: left;
+  }
+
+  h3 {
+    text-align: left;
+  }
+}
+
+/* TOGGLE */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("images/brightness-high-fill.svg");
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #AA14F0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #1abc9c;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.patience-text {
+  color: #fff;
+  text-align: center;
+  Padding-bottom: 20px;
+}
+
+/* toggle changes */
+.dark-mode {
+  background-color: #ECECEC;
+  color: #000;
+}
+
+.mode-ece {
+  text-align: center;
+  font-weight: 900;
+  font-size: 150px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.hr-mode {
+  background-color: #ECECEC;
+  border-color: #191919;
+}
+
+.final {
+  background-color: #1abc9c;
+}
+
+.final2 {
+  color: #1abc9c;
+}
+
+.laast {
+  text-shadow: 2px 2px 4px #000;
+}
+
+.modex {
+  color: #fff;
+  text-align: center;
+}
+
+.modey {
+  color: #191919;
+}
+
+.moon-icon {
+  position: relative;
+  top: 10%;
+  left: 15%;
+}
+
+.sun-icon {
+  position: relative;
+  left: 30%;
+  top: 14%;
+}
+
+.ptext-mode {
+  color: #ECECEC;
+}
