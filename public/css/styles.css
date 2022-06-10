@@ -328,3 +328,16 @@ input:checked+.slider:before {
 .ptext-mode {
   color: #ECECEC;
 }
+
+/* Placeholder Animation */
+
+.input:is(:focus, :valid) {
+  outline-color: #E45826;
+}
+
+.input {
+  text-align: center;
+}
+
+
+/* stackoverflow */

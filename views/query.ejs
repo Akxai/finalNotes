@@ -2,9 +2,15 @@
 <div id="form">
 
   <form class="forms" action="/query" method="post">
-    <input type="email" name="email" placeholder="Email" class="to-change"><br>
-    <textarea name="name" rows="5" cols="30" id="message" placeholder="Your Message (cannot be Blank!)" class="to-change"></textarea><br>
-    <button type="submit" name="button" class="done-button">Done</button>
+    <input type="email" id="email" name="email" class="to-change input query-common" placeholder="Email" required><br>
+    <textarea name="name" rows="5" cols="30" id="message" placeholder="Message" class="to-change input query-common" required></textarea><br>
+    <button type="submit" name="button" class="done-button query-common-text">Done</button>
   </form>
 </div>
 <%- include("partials/footer") -%>
+
+<script type="text/javascript">
+
+  document.getElementById("ECE").innerHTML = "092";
+
+</script>
