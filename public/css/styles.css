@@ -19,6 +19,11 @@ li {
   color: #fff;
   text-align: center;
   padding: 10px;
+  transition: margin-left 0.1s;
+}
+
+li:hover {
+  margin-left: 15px;
 }
 
 h1 {
@@ -74,10 +79,6 @@ button {
 
 a {
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: line-through;
 }
 
 p {
@@ -338,6 +339,3 @@ input:checked+.slider:before {
 .input {
   text-align: center;
 }
-
-
-/* stackoverflow */
