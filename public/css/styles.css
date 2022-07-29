@@ -19,11 +19,11 @@ li {
   color: #fff;
   text-align: center;
   padding: 10px;
-  transition: margin-left 0.1s;
+  transition: transform 0.1s;
 }
 
 li:hover {
-  margin-left: 15px;
+  transform: translateX(10px);
 }
 
 h1 {
@@ -127,6 +127,14 @@ footer {
 
 .two-year {
   padding-bottom: 40px;
+}
+
+.q-button {
+  transition: transform 1s;
+}
+
+.q-button:hover {
+  transform: scale(1.5, 1.5);
 }
 
 .come-soon-text {
