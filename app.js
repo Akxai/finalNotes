@@ -2,6 +2,9 @@ const express = require("express");
 const ejs = require("ejs");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const app = express();
 
@@ -12,7 +15,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-mongoose.connect("mongodb+srv://admin-akshay:akshay123@notes.hibqe.mongodb.net/notesDB", {
+mongoose.connect(process.env.LINK, {
   useNewUrlParser: true
 });
 
