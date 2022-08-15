@@ -346,3 +346,15 @@ input:checked+.slider:before {
 .input {
   text-align: center;
 }
+
+.question {
+  margin: auto;
+  width: 100%;
+  font-size: 20em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+
+.question:hover {
+  color: red;
+}
