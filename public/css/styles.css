@@ -350,7 +350,7 @@ input:checked+.slider:before {
 .question {
   margin: auto;
   width: 100%;
-  font-size: 20em;
+  font-size: 12em;
   margin-bottom: 0.2em;
   margin-top: 0.2em;
 }
