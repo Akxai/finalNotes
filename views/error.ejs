@@ -1,0 +1,21 @@
+<%- include("partials/header") -%>
+
+
+<h2 class="mode error-h2">Awww....Don't Cry.</h2>
+<h5 class="modex error-h3">It's just a 404 Error, You didn't break the Internet.</h5>
+
+<form class="" action="/error" method="post">
+  <button type="submit" name="button" style="" class="error-button">Back To Home! <br /> or else <br /> Refresh to Get Your Favourite POKEMON*</button>
+</form>
+
+<%- include("partials/footer") -%>
+
+<script type="text/javascript">
+  document.getElementById("ECE").innerHTML = "404";
+
+  const randomNumber = Math.floor(Math.random() * 900 + 1);
+  const newImg = document.createElement("img");
+  newImg.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${randomNumber}.png`;
+  newImg.classList.add("pokemon");
+  document.querySelector("form").append(newImg);
+</script>

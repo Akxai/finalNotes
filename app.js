@@ -52,7 +52,12 @@ app.post("/query", function(req, res) {
   res.redirect("/");
 });
 
-
+app.get("/error", function(req, res) {
+  res.render("error");
+})
+app.post("/error", function(req, res) {
+  res.redirect("/");
+})
 
 app.listen(process.env.PORT || "3000", function() {
   console.log("server is running on port 3000");

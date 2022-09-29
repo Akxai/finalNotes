@@ -358,3 +358,23 @@ input:checked+.slider:before {
 .question:hover {
   color: red;
 }
+
+.error-h2 {
+  padding: 30px;
+}
+
+.error-button {
+  padding: 10px 0px;
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+  display: inherit;
+  margin: auto;
+}
+
+.pokemon {
+  display: inherit;
+  margin: auto;
+  width: 10em;
+  height: 10em;
+  margin-bottom: 20px !important;
+}
