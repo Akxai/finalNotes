@@ -361,14 +361,40 @@ input:checked+.slider:before {
 
 .error-h2 {
   padding: 30px;
+  font-family: "Silkscreen", "Creepster", sans-serif;
 }
 
 .error-button {
-  padding: 10px 0px;
-  margin-top: 30px !important;
-  margin-bottom: 30px !important;
   display: inherit;
-  margin: auto;
+  margin: 40px auto;
+}
+
+.error-button {
+  padding: 20px;
+  position: relative;
+  font-weight: bold;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(237, 117, 47, 0.4);
+}
+
+.error-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(-250%) skewX(-30deg);
+  transition: transform 0.7s ease-in-out;
+}
+
+.error-button:hover::before {
+  transform: translateX(200%) skewX(-30deg);
+}
+
+.error-h5 {
+  font-family: "Special Elite", sans-serif;
 }
 
 .pokemon {
